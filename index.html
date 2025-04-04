@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Твоя фронтенд-открытка</title>
+  <title>С днюхой!</title>
   <style>
     body {
       margin: 0;
@@ -42,6 +42,14 @@
         line-height: 6px;
       }
     }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
   </style>
 </head>
 <body>
@@ -58,7 +66,7 @@
 ＼二)
 </pre>
   </div>
-  <div class="message glow">
+  <div class="message glow" id="typewriter">
     <p>Поздравляю, фронтенд-воин с ещё одним релизом в продакшн по имени Годы!</p>
     <p>Пусть твой JavaScript будет типизирован, а стили — не сломаны!</p>
     <p>— Искренне твой, человек, который всегда помнит про 5 но забывает месяц.</p>
